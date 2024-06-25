@@ -1,0 +1,77 @@
+[33mcommit f771e86521cdc4e46203c7a8cadda8fc9d59020b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Konitann <m20046@g.metro-cit.ac.jp>
+Date:   Tue Jun 25 13:24:18 2024 +0900
+
+    first commit
+
+[33mcommit cd51f284d37a5de82f821b3b8f9bc08c39c5ddc4[m
+Merge: e06f5f60 f8f56e57
+Author: m20099 <151318847+m20099@users.noreply.github.com>
+Date:   Mon Jun 24 13:47:01 2024 +0900
+
+    Merge pull request #2 from JunFujik/nakagama
+    
+    react & flask container
+
+[33mcommit f8f56e57a6ec9ecbe6b8089ada1fe124a988d796[m[33m ([m[1;31morigin/nakagama[m[33m)[m
+Author: m20099 <m20099@g.metro-cit.ac.jp>
+Date:   Mon Jun 24 13:43:41 2024 +0900
+
+    react & flask container
+
+[33mcommit e06f5f60e0b2b39964e2919bc949f957e4ea225a[m
+Author: JunFujik <86551267+JunFujik@users.noreply.github.com>
+Date:   Mon Jun 17 15:00:02 2024 +0900
+
+    Update README.md
+
+[33mcommit 8936444f6daaeb2cb7373bb74f988e4daaf34bbc[m
+Author: JunFujik <86551267+JunFujik@users.noreply.github.com>
+Date:   Mon Jun 17 14:59:46 2024 +0900
+
+    Update README.md
+
+[33mcommit 00e3c30a21f2aefb0e2be7f22f8fc035b78df979[m
+Merge: 6045cb38 003f8942
+Author: JunFujik <86551267+JunFujik@users.noreply.github.com>
+Date:   Mon Jun 17 14:56:30 2024 +0900
+
+    Merge pull request #1 from JunFujik/junfujik
+    
+    reactとflaskを一つのコンテナで共存させるようにDockerfileとcomposeを編集した。また、ディレクトリ構造もいじった。
+
+[33mcommit 003f89426730ae154a2364347708075757adbd1d[m[33m ([m[1;31morigin/junfujik[m[33m)[m
+Author: junfujik <m20121@g.metro-cit.ac.jp>
+Date:   Mon Jun 17 14:54:14 2024 +0900
+
+    reactとflaskを一つのコンテナで共存させるようにDockerfileとcomposeを編集した。また、ディレクトリ構造もいじった。
+
+[33mcommit 6045cb38c400e5ba45912f69c95c0b2f95846e9b[m[33m ([m[1;31morigin/tanaka[m[33m)[m
+Author: konitann <m20046@g.metro-cit.ac.jp>
+Date:   Mon Jun 3 15:18:01 2024 +0900
+
+    change tree
+
+[33mcommit 88d80a477d6475052a2d258c15b57cad91425203[m
+Author: konitann <m20046@g.metro-cit.ac.jp>
+Date:   Mon Jun 3 15:12:35 2024 +0900
+
+    change tree
+
+[33mcommit c6b1afe6ce609e83460fd13e32835334a9426b64[m
+Author: konitann <m20046@g.metro-cit.ac.jp>
+Date:   Mon Jun 3 15:06:34 2024 +0900
+
+    Add initial commit
+
+[33mcommit 20360b6e05152246473d5b15214a11d8566b5919[m
+Author: JunFujik <86551267+JunFujik@users.noreply.github.com>
+Date:   Mon May 27 15:21:22 2024 +0900
+
+    Update README.md
+
+[33mcommit 43b2808d16361cc1db3bb28ad736b0c51055cf02[m
+Author: JunFujik <86551267+JunFujik@users.noreply.github.com>
+Date:   Mon May 27 15:10:11 2024 +0900
+
+    Initial commit

@@ -1,38 +1,35 @@
-version: '3'
+version: '3.8'
 
 services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
   flask:
     build:
-      context: ./
-      dockerfile: flask/Dockerfile
-    restart: always
-    volumes:
-      - ./flask:/app
-      - ./templates:/app/templates
+      context: ./flask  # flaskディレクトリがビルドコンテキストとなる
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      FLASK_ENV: development
 
   react:
-    build:
-      context: ./react
-      dockerfile: Dockerfile
-    restart: always
-    volumes:
-      - ./react:/usr/src/app
-    command: npm start
+    build: ./react  # reactディレクトリをビルドコンテキストとする
     ports:
       - "3000:3000"
+    depends_on:
+      - flask
 
-  db:
-    restart: always
-    image: mysql/mysql-server:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: flask_app
-      MYSQL_USER: docker
-      MYSQL_PASSWORD: docker
-      TZ: 'Asia/Tokyo'
-    volumes:
-    - ./data_mysql:/var/lib/mysql
-    ports:
-    - 3306:3306
+volumes:
+  db_data:

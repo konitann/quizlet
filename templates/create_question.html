@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問題作成ページ</title>
+</head>
+<body>
+    <h1>問題作成ページ</h1>
+    <form action="{{ url_for('create_question') }}" method="post">
+        <label for="title">題名:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="content">問題文:</label>
+        <textarea id="content" name="content" required></textarea>
+        <br>
+        <label for="choice1">選択肢1:</label>
+        <input type="text" id="choice1" name="choice1" required>
+        <br>
+        <label for="choice2">選択肢2:</label>
+        <input type="text" id="choice2" name="choice2" required>
+        <br>
+        <label for="choice3">選択肢3:</label>
+        <input type="text" id="choice3" name="choice3" required>
+        <br>
+        <label for="choice4">選択肢4:</label>
+        <input type="text" id="choice4" name="choice4" required>
+        <br>
+        <label for="answer">答え:</label>
+        <input type="text" id="answer" name="answer" required>
+        <br>
+        <label for="problem_type">問題種類:</label>
+        <input type="text" id="problem_type" name="problem_type" required>
+        <br>
+        <button type="submit">保存</button>
+    </form>
+    <a href="{{ url_for('mypage') }}">マイページに戻る</a>
+</body>
+</html>

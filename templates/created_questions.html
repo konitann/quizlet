@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>作った問題閲覧ページ</title>
+</head>
+<body>
+    <h1>作った問題閲覧ページ</h1>
+    {% if questions %}
+        <ul>
+            {% for question in questions %}
+                <li>
+                    <h2>{{ question.title }}</h2>
+                    <p>{{ question.content }}</p>
+                    <p>選択肢1: {{ question.choice1 }}</p>
+                    <p>選択肢2: {{ question.choice2 }}</p>
+                    <p>選択肢3: {{ question.choice3 }}</p>
+                    <p>選択肢4: {{ question.choice4 }}</p>
+                    <p>答え: {{ question.answer }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>まだ問題が作成されていません。</p>
+    {% endif %}
+    <a href="{{ url_for('mypage') }}">マイページに戻る</a>
+</body>
+</html>
